@@ -596,11 +596,11 @@ read_handle = {
     },
     "Italy": {"func": read_RGB, "args": {}},
     "shuguang": {"func": read_RGB, "args": {"reduce": 1.0}},
-    "shuguang_cut": {"func": read_RGB, "args": {"reduce": 1.0}},
+    # "shuguang_cut": {"func": read_RGB, "args": {"reduce": 1.0}},
     "wuhan": {"func": read_RGB, "args": {}},
     "airport": {"func": read_RGB, "args": {}},
     "yellow": {"func": read_RGB, "args": {}},
-    "yellow_cut": {"func": read_RGB, "args": {}},
+    # "yellow_cut": {"func": read_RGB, "args": {}},
     "farmland": {"func": read_RGB, "args": {}},
     "Gloucester1": {"func": read_RGB, "args": {
         "reduce": 1

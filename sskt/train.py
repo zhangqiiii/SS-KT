@@ -30,21 +30,17 @@ warnings.filterwarnings("ignore")
 patch_setting = {
     'Italy': [(64, 16), 0],
     'yellow': [(48, 48), 1],
-    'yellow_cut': [(48, 48), 1],
     'California': [(128, 128), 1],
     'Texas': [(128, 64), 1],
     'shuguang': [(64, 32), 1],
-    'shuguang_cut': [(64, 32), 1],
 }
 
 median_setting = {
     'Italy': 7,
     'yellow': 5,
-    'yellow_cut': 5,
     'California': 1,
     'Texas': 13,
     'shuguang': 13,
-    'shuguang_cut': 13,
 }
 
 
@@ -218,9 +214,8 @@ if __name__ == "__main__":
     find_num = 150
     thr_min = 0.80
     thr_max = 0.85
-    # exp_dataset = ['Italy', 'yellow', 'shuguang', 'Texas', 'California']
-    exp_dataset = ['yellow_cut', 'shuguang_cut']
-    # exp_dataset *= 10
+    exp_dataset = ['Italy', 'yellow', 'shuguang', 'Texas', 'California']
+    exp_dataset *= 10
 
     for d in exp_dataset:
         seed_everything(8888)

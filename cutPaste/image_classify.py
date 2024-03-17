@@ -36,9 +36,6 @@ if __name__ == "__main__":
     # data_name_list = ['Italy_1.bmp', 'Italy_2.bmp', 'yellow_1.bmp', 'yellow_2.bmp',
     #                   'California_1.bmp', 'California_2.bmp', 'Texas_1.bmp', 'Texas_2.bmp',
     #                   'shuguang_1.bmp', 'shuguang_2.bmp']
-    # data_name_list += ['Gloucester1_1.bmp', 'Gloucester1_2.bmp',
-    #                   'Gloucester2_1.bmp', 'Gloucester2_2.bmp',
-    #                   'wuhan_1.png', 'wuhan_2.jpg']
     # data_name_list = ['yellow_1.bmp', 'yellow_2.bmp']
     data_name_list = ['shuguang_1.bmp', 'shuguang_2.bmp']
     for data_name in data_name_list:
@@ -49,4 +46,4 @@ if __name__ == "__main__":
         # img_ = cv2.imread("../data/optsar/shuguang/shuguang_2.bmp").transpose((2, 0, 1))
         # cls_cluster(img_, data_name[:-4], 5)
         # cls_cluster(img_, data_name[:-4], 5, 1)
-        cls_cluster(img_, data_name[:-6]+"_cut"+data_name[-6:-4], 5, 13)
+        cls_cluster(img_, data_name[:-4], 5, 13)
